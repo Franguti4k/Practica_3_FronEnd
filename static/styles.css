@@ -1,0 +1,117 @@
+/*styles.css*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  width: 40px;
+}
+
+.movies-container {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  max-width: 10px;
+  margin: 0 auto;
+}
+
+.movie-card {
+  background-color: #292929;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  background-color: #5b5a5a; 
+  transform: scale(1.1);
+}
+
+.movie-card img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.rating-bar-container {
+  width: 70px; 
+  background-color: #444;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.rating-bar {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%; 
+  transition: width 0.5s ease-in-out;
+}
+
+.columns-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.columns-selector a {
+  padding: 10px 15px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s, color 0.3s;
+}
+
+.columns-selector a:hover {
+  background-color: white;
+  color: black;
+}
+
+.columns-selector a.selected {
+  border-color: red;
+  color: red;
+}
